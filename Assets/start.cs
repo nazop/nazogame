@@ -111,7 +111,6 @@ public class start : MonoBehaviour
 
         GameObject ret = Instantiate(prefabButton);
 
-        // 場所移動 Vertical Layout Groupをアタッチすればよかったとかいうギャグ
         ret.transform.SetParent(player.transform); // canvasを親にする
 
         float posBX = hidarihasi.x + X;
