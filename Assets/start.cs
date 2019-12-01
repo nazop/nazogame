@@ -7,24 +7,24 @@ using UnityEngine.SceneManagement;
 public class start : MonoBehaviour
 {
 
-    public float buttonX;
-    public float buttonY;
-    public GameObject player;
-    public GameObject prefabButton; // インスペクターから入れる
-    public int yoko = 4;
-    public int tate = 5;
-    public GameObject[,] buttonArray; // 2次元配列
-    public Vector3 board;
-    public Vector3 hidarihasi;
-    public int necessaryTap = 2;
-    public GameObject[] tapButton; // タップしたボタンを入れる
-    public int clickNumber = 0; // 現在タップされている値
+    private float buttonX;
+    private float buttonY;
+    private GameObject player;
+    private GameObject prefabButton; // インスペクターから入れる
+    private int yoko = 4;
+    private int tate = 5;
+    private GameObject[,] buttonArray; // 2次元配列
+    private  Vector3 board;
+    private Vector3 hidarihasi;
+    private int necessaryTap = 2;
+    private GameObject[] tapButton; // タップしたボタンを入れる
+    private int clickNumber = 0; // 現在タップされている値
     public int numberMax = 2048; // 2の11乗までアップする
-    public int score;
-    public GameObject scoreText;
-    public GameObject timeText;
-    public int time = 0;
-    public int maxTime = 60; // 1ゲーム何秒か
+    private int score;
+    private GameObject scoreText;
+    private GameObject timeText;
+    private int time = 0;
+    private int maxTime = 60; // 1ゲーム何秒か
     private float leftTime = 0; // 前回タイムが減ってからの経過時間
 
 
